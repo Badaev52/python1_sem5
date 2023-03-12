@@ -24,3 +24,13 @@ print(f" A = {a}; B = {b} -> {expNum(a, b)}")
 
 # 2 2
 #     4 
+
+def sumNum (x, y):
+    if y == 0:
+        return x
+    return (sumNum(x, y - 1)) + 1
+
+a = int(input("Введите число А: "))
+b = int(input("Введите число B: "))
+
+print(f" A = {a}; B = {b} -> {sumNum(a, b)}")
